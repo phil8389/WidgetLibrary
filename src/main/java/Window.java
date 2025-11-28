@@ -21,11 +21,6 @@ public class Window extends AbstractElement implements IElement {
     }
 
     @Override
-    public void addListener(IWidgetListener listener) {
-
-    }
-
-    @Override
     public void notifyListeners(WidgetEvent event) {
 
     }

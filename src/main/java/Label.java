@@ -8,11 +8,6 @@ public class Label extends AbstractElement implements IElement {
     }
 
     @Override
-    public void addListener(IWidgetListener listener) {
-
-    }
-
-    @Override
     public void notifyListeners(WidgetEvent event) {
 
     }

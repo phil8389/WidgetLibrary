@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class AbstractElement {
+public abstract class AbstractElement {
     String name;
     List<IWidgetListener> listeners;
     public final String getName(){
@@ -12,4 +12,10 @@ public class AbstractElement {
         this.name = name;
         this.listeners = new ArrayList<IWidgetListener>();
     }
+
+    void addListener(IWidgetListener listener)
+    {
+        this.listeners.add(listener);
+    }
+    public abstract void notifyListeners(WidgetEvent event);
 }

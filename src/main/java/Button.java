@@ -10,10 +10,7 @@ public class Button extends AbstractElement implements IElement {
         System.out.println("(Drawing a clickable button) "+ this.getName());
     }
 
-    @Override
-    public void addListener(IWidgetListener listener) {
-        this.listeners.add(listener);
-    }
+
 
     @Override
     public void notifyListeners(WidgetEvent event) {
