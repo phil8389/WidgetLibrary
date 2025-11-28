@@ -13,9 +13,9 @@ public abstract class AbstractElement {
         this.listeners = new ArrayList<IWidgetListener>();
     }
 
-    void addListener(IWidgetListener listener)
+    public final void addListener(IWidgetListener listener)
     {
         this.listeners.add(listener);
     }
-    public abstract void notifyListeners(WidgetEvent event);
+    //public abstract void notifyListeners(WidgetEvent event);
 }
